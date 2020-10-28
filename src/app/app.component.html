@@ -1,5 +1,7 @@
-
-<ap-photo url="https://img2.icarros.com/dbimg/imgadicionalnoticia/4/91910_1" description="sandero"></ap-photo>
-<ap-photo url="https://motortudo.com/wp-content/uploads/2020/03/Ficha-T%C3%A9cnica-Hyundai-hb20S-Vision-1.6-Autom%C3%A1tico-2020.jpg" description="hb20"></ap-photo>
+<ap-photo
+  *ngFor="let photo of photos"
+    [url]="photo.url"
+    [description]="photo.description">
+</ap-photo>
 
 <router-outlet></router-outlet>
