@@ -1,17 +1,17 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'ap-load-button',
   templateUrl: './load-button.component.html',
-  styleUrls: ['./load-button.component.scss']
+  styleUrls: ['./load-button.component.css']
 })
 export class LoadButtonComponent implements OnInit {
 
-  @Input() hasMore = false;
+  @Input() hasMore: boolean = false;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
